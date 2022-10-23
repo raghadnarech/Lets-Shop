@@ -20,15 +20,9 @@ import 'screens/Admins/adminpage_router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-<<<<<<< HEAD
 
   await Firebase.initializeApp();
 
-=======
-  //(run) لحتى خلي التطبيق يقدر ينفذ برنامج فلاتر قبل ماينعملو
-  await Firebase.initializeApp();
-  //(run) لحتى خلي التطبيق يقدر يتواصل مع الفاير بيز قبل ماينعملو
->>>>>>> ed659518293d7c9ae18eb46e68a412bbe8ad4386
   runApp(MyApp());
 }
 
@@ -42,12 +36,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-=======
-    // هون خبرت البرنامج انو عندي بروفايدر كرمال اقدر استخدمن
-    //وين مابدي وبأي صفحة بدي اياها
-
->>>>>>> ed659518293d7c9ae18eb46e68a412bbe8ad4386
     return MultiProvider(
       providers: [
         ChangeNotifierProvider<CategoryProvider>(
@@ -59,11 +47,6 @@ class _MyAppState extends State<MyApp> {
       ],
       child: MaterialApp(
           debugShowCheckedModeBanner: false,
-<<<<<<< HEAD
-=======
-          //كرمال اقدر روح عليها عن طريق الاسم  (id) هون عر فت الصفحات وعطيتها اسماء
-          //طبعاً مو كل الصفحات عرفتها بس اللي مستخدمين اكتر شي
->>>>>>> ed659518293d7c9ae18eb46e68a412bbe8ad4386
           routes: {
             SignUpPage.id: (ctx) => SignUpPage(),
             LoginPage.id: (ctx) => LoginPage(),
